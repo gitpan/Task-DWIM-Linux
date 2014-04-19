@@ -22,8 +22,30 @@ no_index:
     - inc
     - t
 requires:
+  Acme::MetaSyntactic: 1.012
+  Business::PayPal: 0.11
+  CGI: 3.65
+  Code::Explain: 0.02
+  Config::Tiny: 2.20
+  DBD::SQLite: 1.42
+  DBI: 1.631
+  DBIx::RunSQL: 0.12
+  Daemon::Control: 0.001005
+  Dancer: 1.3123
+  DateTime::Tiny: 1.04
+  Email::Valid: 1.193
+  Geo::IP: 1.43
+  Hash::Merge::Simple: 0.051
+  MIME::Lite: 3.030
+  Moo: 1.004002
+  Starman: 0.4009
+  Storable: 2.45
+  Template: 2.25
+  Test::More: 1.001003
+  Test::WWW::Mechanize: 1.44
+  YAML: 0.90
   perl: 5.008
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/dwimperl/Task-DWIM
-version: 0.08
+version: 0.09

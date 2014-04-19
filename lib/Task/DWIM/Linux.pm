@@ -3,7 +3,7 @@ package Task::DWIM::Linux;
 use 5.008;
 use strict;
 use warnings;
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use Config::Tiny;
 
@@ -61,7 +61,7 @@ sub read_modules {
 
     return if not -e '.git' and not -e $file;
 
-    my $config = Config::Tiny->read( 'file.conf', 'utf8' );
+    my $config = Config::Tiny->read( $file, 'utf8' );
     foreach my $name (keys %$config) {
         $modules{$name} = $config->{$name}{version};
     }
